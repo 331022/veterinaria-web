@@ -1,4 +1,7 @@
-window.addEventListener("load", mostrarTurnos);
+//Esto es para que jest no falle en los test por no reconocer el window. asi lo ignora y va solo a la funcion para hacer el test
+if (typeof window !== "undefined") {
+    window.addEventListener("load", mostrarTurnos);
+}
 
 function mostrarTurnos() {
 

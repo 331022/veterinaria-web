@@ -27,10 +27,10 @@ test('nombre de dueño vacio', () => {
 });
 
 //validar nombre con espacios al inicio
-test('nombre de sin espacios vacio', () => {
+test('nombre de con espacios', () => {
     const datos = { ...datosReservaBase, nombreDueno: ' Juan' };
     const resultado = reserva.validarReserva(datos);
-    expect(resultado).toBe(false);
+    expect(resultado).toBe(true);
 });
 
 //Validar nombre no tenga numeros

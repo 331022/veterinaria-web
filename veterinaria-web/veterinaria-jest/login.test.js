@@ -1,3 +1,14 @@
+//Esto es para que funcionen los test que usan local storage
+beforeEach(() => {
+  const localStorageMock = {
+    getItem: jest.fn(),
+    setItem: jest.fn(),
+    clear: jest.fn(),
+    removeItem: jest.fn(),
+  };
+  global.localStorage = localStorageMock;
+});
+
 let login = require('../src/core/login');
 global.alert = jest.fn();
 
