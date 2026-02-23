@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Turnos veterninaria</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <h2 class="logo">Veterinaria Huellas</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="reserva.html">Reservar Turno</a>
+                <a href="login.html" id="btnLogOut">Cerrar sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="turnos-section">
+        <div class="container">
+            <h1 class="turnos-titulo">Listado de Turnos</h1>
+
+            <div class="tabla-responsive">
+                <table class="tabla-turnos">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Mascota</th>
+                            <th>Dueño</th>
+                            <th>Servicio</th>
+                            <th>Profesional</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaTurnos">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="src/app.js"></script>
+    <script src="src/core/turnos.js"></script>
+</body>
+</html>

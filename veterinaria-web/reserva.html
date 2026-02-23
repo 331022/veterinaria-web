@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reserva turnos veterinaria</title>
+</head>
+
+<body class="page-reserva">
+    <header class="header">
+        <div class="container nav-container">
+            <h2 class="logo">Veterinaria Huellas</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="turnos.html">Ver Mis Turnos</a>
+                <a href="login.html" id="btnLogOut">Cerrar sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="reserva-section">
+        <div class="reserva-container">
+            <h1>Reserva de Turnos</h1>
+            <p class="reserva-aviso">
+                Las reservas deben realizarse con al menos 48 horas de anticipación.
+            </p>
+
+            <form class="reserva-form">
+
+                <div class="form-group">
+                    <label>Nombre del Dueño</label>
+                    <input type="text" id="nombreDueno">
+                </div>
+
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="text" id="telefono">
+                </div>
+
+                <div class="form-group">
+                    <label>Cédula</label>
+                    <input type="text" id="cedula">
+                </div>
+
+                <div class="form-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" id="mail">
+                </div>
+
+                <div class="form-group">
+                    <label>Nombre de la Mascota</label>
+                    <input type="text" id="nombreMascota">
+                </div>
+
+                <div class="form-group">
+                    <p>Tipo de mascota:</p>
+                    <label><input type="radio" name="tipoMascota" value="perro"> Perro</label>
+                    <label><input type="radio" name="tipoMascota" value="gato"> Gato</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Servicio:</p>
+                    <label><input type="radio" name="servicio" value="veterinaria"> Veterinaria</label>
+                    <label><input type="radio" name="servicio" value="estetica"> Estética</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Tipo de Profesional:</p>
+                    <label><input type="radio" name="tipoProfesional" value="veterinario"> Veterinario</label>
+                    <label><input type="radio" name="tipoProfesional" value="esteticista"> Esteticista</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Nombre del Profesional (opcional)</label>
+                    <select id="nombreProfesional">
+                        <option value="">-- Seleccione --</option>
+                        <option value="Martín López">Martín López</option>
+                        <option value="Carolina Fernández">Carolina Fernández</option>
+                        <option value="Javier Rodríguez">Javier Rodríguez</option>
+                        <option value="Lucía Pereira">Lucía Pereira</option>
+                        <option value="Andrés Morales">Andrés Morales</option>
+                        <option value="Valentina Gómez">Valentina Gómez</option>
+                        <option value="Sebastián Acosta">Sebastián Acosta</option>
+                        <option value="Florencia Silva">Florencia Silva</option>
+                        <option value="Nicolás Ramos">Nicolás Ramos</option>
+                        <option value="Camila Torres">Camila Torres</option>
+                        <option value="Paula Méndez">Paula Méndez</option>
+                        <option value="Bruno Castillo">Bruno Castillo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Fecha</label>
+                    <input type="date" id="fecha">
+                </div>
+
+                <div class="form-group">
+                    <label>Hora</label>
+                    <input type="time" id="hora" min="09:00" max="18:00">
+                </div>
+
+                <input type="button" id="btnReservar" value="Reservar Turno" class="btn-principal">
+
+            </form>
+        </div>
+    </section>
+
+    <script src="src/core/reservas.js"></script>
+    <script src="src/app.js"></script>
+
+</body>
+
+</html>

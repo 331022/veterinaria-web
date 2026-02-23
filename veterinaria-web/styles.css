@@ -1,0 +1,413 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*INDEX*/
+
+/* ===== RESET BASICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background-color: #2c3e50;
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== BANNER ===== */
+.banner {
+    background-color: #1e90ff; /* Azul principal */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.banner-reserva h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner-reserva a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+     color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* ===== SECCIONES GENERALES ===== */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* ===== SERVICIOS ===== */
+.servicios-cajas {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.servicios-cajas div {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ===== EQUIPO ===== */
+.equipoProfesional-cajas {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.equipoProfesional-cajas div {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ===== GALERIA ===== */
+.galeria-cajas {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.galeria-cajas div {
+    background: #ddd;
+    height: 120px;
+    border-radius: 8px;
+}
+
+/* ===== CONTACTO ===== */
+.contacto-cajas {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contacto-cajas div {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+.piePagina {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================================= */
+/* ===== RESPONSIVE CELULAR ===== */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner-reserva h1 {
+        font-size: 24px;
+    }
+
+    .servicios-cajas {
+        grid-template-columns: 1fr;
+    }
+
+    .equipoProfesional-cajas {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-cajas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacto-cajas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*LOGIN*/
+
+.auth-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caja del login */
+.auth-container {
+    background: white;
+    padding: 40px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.auth-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0077b6; /* Azul como el banner */
+}
+
+/* Grupo de input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Botón */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #005f8a;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 480px) {
+    .auth-container {
+        width: 90%;
+        padding: 25px;
+    }
+}
+
+/*RESERVA*/
+
+/* ===== RESERVA ===== */
+
+.page-reserva {
+    background-color: #f4f8fb;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.reserva-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.reserva-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+.reserva-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.reserva-aviso {
+    text-align: center;
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Form */
+.reserva-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #0d6efd;
+    outline: none;
+}
+
+/* Radios ordenados */
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Botón */
+.btn-principal {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-principal:hover {
+    background-color: #0b5ed7;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .reserva-container {
+        padding: 25px;
+    }
+
+}
+
+/*TURNOS*/
+
+/* ================= TURNOS ================= */
+
+.turnos-section {
+    padding: 60px 20px;
+    background-color: #f4f8fb;
+    min-height: 80vh;
+}
+
+.turnos-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0056b3;
+}
+
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+.tabla-turnos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.tabla-turnos th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabla-turnos td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-turnos tr:hover {
+    background-color: #f1f7ff;
+}
+
+/* Responsive tabla en móvil */
+@media (max-width: 768px) {
+    .tabla-turnos th,
+    .tabla-turnos td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
