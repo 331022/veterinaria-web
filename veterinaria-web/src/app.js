@@ -1,6 +1,7 @@
 window.addEventListener("load", inicio);
 
 function inicio() {
+    precargarUsuarios();
     validarSesion();
 
     let btnLogin = document.querySelector("#btnLogIn");
