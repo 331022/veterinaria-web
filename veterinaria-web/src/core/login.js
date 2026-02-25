@@ -1,13 +1,8 @@
 console.log("login cargado");
 
-function precargarUsuarios() {
+function validarLogin(datosLogin) {
 
-    // Si ya existen usuarios, no los vuelve a crear
-    if (localStorage.getItem("usuarios") != null) {
-        return;
-    }
-
-    let usuarios = [
+   let usuarios = [
         // ===== CLIENTES =====
         { cedula: "47896523", usuario: "Sofía Martínez", password: "sofia2026", rol: "cliente" },
         { cedula: "51234768", usuario: "Diego Fernández", password: "diegoVet", rol: "cliente" },
@@ -31,14 +26,6 @@ function precargarUsuarios() {
         // ===== ADMIN =====
         { cedula: "27548963", usuario: "Juana", password: "admin2026", rol: "admin" }
     ];
-
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-}
-
-function validarLogin(datosLogin) {
-
-   let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
 
     for (let i = 0; i < usuarios.length; i++) {
 
