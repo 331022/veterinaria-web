@@ -20,12 +20,13 @@ function validarLogin(datosLogin) {
         { cedula: "36789123", usuario: "Florencia Silva", password: "empleado234", rol: "empleado" },
         { cedula: "29812345", usuario: "Nicolás Ramos", password: "empleado345", rol: "empleado" },
         { cedula: "34125678", usuario: "Camila Torres", password: "empleado456", rol: "empleado" },
-        { cedula: "30987654", usuario: "Paula Méndez", password: "empleado232", rol: "empleado" },
-        { cedula: "33214567", usuario: "Bruno Castillo", password: "empleado121", rol: "empleado" },
+        { cedula: "30987654", usuario: "Paula Méndez", password: "empleado789", rol: "empleado" },
+        { cedula: "33214567", usuario: "Bruno Castillo", password: "empleado119", rol: "empleado" },
 
         // ===== ADMIN =====
         { cedula: "27548963", usuario: "Juana", password: "admin2026", rol: "admin" }
     ];
+
 
     for (let i = 0; i < usuarios.length; i++) {
 
