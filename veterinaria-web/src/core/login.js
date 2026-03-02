@@ -24,7 +24,7 @@ function validarLogin(datosLogin) {
         { cedula: "33214567", usuario: "Bruno Castillo", password: "empleado119", rol: "empleado" },
 
         // ===== ADMIN =====
-        { cedula: "27548963", usuario: "Juana", password: "admin2026", rol: "admin" }
+        { cedula: "27548963", usuario: "Juana", password: "veterinaria", rol: "admin" }
     ];
 
 
